@@ -15,7 +15,7 @@ function compute() {
     resultDisplay.innerHTML = "If you deposit " +  "<span class='high'>" + amount + "</span>" + 
     ",<br> at an interest rate of " + "<span class='high'>" + rate + "</span>" +
     ".<br> You will receive an amount of " + "<span class='high'>" + interest + "</span>" +
-    ",<br> in the year" + "<span class='high'>" + year + "</span>."
+    ",<br> in the year" + "<span class='high'>" + year + "</span>.";
 
 
 }
