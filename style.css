@@ -1,16 +1,56 @@
-body{
-    background-color:  black; font-family:arial; color: white; width: 500px;
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+    padding: 10px;
+ 
 }
 
 h1 {
-    font-family: verdana; color: grey; text-align: center;
+    color: grey; 
+    font-family: verdana; 
+
+
+}
+#maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.maindiv {
-    background-color: white; color: black; width: 300px; padding: 20px; 
-    box-align: center; border-radius: 25px;
+.contents {
+    margin-left: 85px;
 }
 
-.rumena {
+.labels {
+    width: 130px;
+}
+
+#Years {
+   width: 164px;
+}
+
+#amount {
+  width: 155px;
+}
+
+#table {
+    padding-bottom: 10px;
+}
+
+#compute {
+    margin-bottom: 15px;
+    background-color: tomato;
+    color: black;
+    margin-left: 95px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.high {
     background-color: yellow;
-  }
+}

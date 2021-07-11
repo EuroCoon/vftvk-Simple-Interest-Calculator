@@ -1,27 +1,27 @@
 function compute() {
-    var principal = document.getElementById("principal").value;
-    var rate = document.getElementById("rate").value;
+    var amount = document.getElementById("amount").value;
+    var rate = document.getElementById("rate").value; 
     var years = document.getElementById("years").value;
-    var interest = principal * years * rate / 100;
-    var year = new Date().getFullYear() + parseInt(years);
+    var interest = amount * rate * years / 100;
+    var year = new Date().getFullYear() + parseInt(years)
 
-
-    if (principal < "1") {
-        alert("Enter a positive number");
-        document.getElementById("principal").focus();
-        return false;
+    if(amount < "1") {
+        alert("Please enter a positive number");
+        document.getElementById("amount").focus();
+        return;
     }
 
+    var resultDisplay = document.getElementById("result");
+    resultDisplay.innerHTML = "If you deposit " +  "<span class='high'>" + amount + "</span>" + 
+    ",<br> at an interest rate of " + "<span class='high'>" + rate + "</span>" +
+    ".<br> You will receive an amount of " + "<span class='high'>" + interest + "</span>" +
+    ",<br> in the year" + "<span class='high'>" + year + "</span>."
 
-    document.getElementById("result").innerHTML =
-        "If you deposit  <span class=\"rumena\">" + principal 
-        + "</span>,<br\>at an interest rate of <span class=\"rumena\">" + rate 
-        + "</span> %. <br\> You will receive an amount of <span class=\"rumena\">" 
-        + interest + "</span>,<br\> in the year <span class=\"rumena\">" + year;
+
 }
 
-function updateRate() {
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText = rateval + "%";
+function updaterate() {
+var change_range = document.getElementById("rate").value;
+document.getElementById("rate_display").innerText = change_range + " %";
 }
 
